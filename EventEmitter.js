@@ -1,5 +1,5 @@
 /**
- * EventEmitter v4.0.4 - git.io/ee
+ * EventEmitter v4.0.5 - git.io/ee
  * Oliver Caldwell
  * MIT license
  * @preserve
@@ -300,8 +300,8 @@
     proto.emit = function(evt) {
         var args = Array.prototype.slice.call(arguments, 1);
         return this.emitEvent(evt, args);
-    }
-    
+    };
+
     // Expose the class either via AMD or the global object
     if(typeof define === 'function' && define.amd) {
         define(function() {
